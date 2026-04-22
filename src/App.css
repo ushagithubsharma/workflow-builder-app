@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fb;
+}
+
+/* LAYOUT */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  background: white;
+  border-right: 1px solid #eee;
+}
+
+.canvas {
+  width: 50%;
+  padding: 20px;
+  background: #fafafa;
+  border-right: 1px solid #eee;
+}
+
+.config {
+  width: 30%;
+  padding: 20px;
+  background: white;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+button.delete {
+  background: #ef4444;
+}
+
+button.delete:hover {
+  background: #dc2626;
+}
+
+/* NODE CARD */
+.node-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.node-card:hover {
+  transform: scale(1.02);
+}
+
+/* INPUTS */
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 100%;
+}
+
+input:focus, select:focus {
+  border-color: #4f46e5;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 20px;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* FORM GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* EMPTY STATE */
+.empty {
+  color: #888;
+  font-size: 14px;
+}
