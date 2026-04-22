@@ -1,16 +1,73 @@
-# React + Vite
+                                              Workflow Builder Application
+->Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a dynamic Workflow Builder application that allows users to create, configure, and simulate workflows using different types of nodes such as Start, Task, Approval, Automated, and End.
+The application focuses on clean architecture, dynamic UI rendering, and logical workflow execution.
 
-Currently, two official plugins are available:
+->Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The application is built using React.js with Zustand for state management.
 
-## React Compiler
+* Key Layers:
+•	UI Layer: Sidebar, Canvas, Config Panel, Simulator
+•	State Layer: Zustand store for managing nodes and configurations
+•	Logic Layer: Workflow simulation logic (mock API)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Folder Structure:
+•	components/ → UI components
+•	store/ → Zustand state management
+•	api/ → Simulation logic
 
-## Expanding the ESLint configuration
+* How to Run
+1.	Clone the repository:
+2.	git clone <your-repo-link>
+3.	cd <project-folder>
+4.	Install dependencies:
+5.	npm install
+6.	Start the application:
+7.	npm run dev
+8.	Open in browser:
+9.	http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+->Features Implemented
+
+* Core Features:
+•	Dynamic node creation (Start, Task, Approval, Automated, End)
+•	Node selection and configuration panel
+•	Real-time state updates using Zustand
+•	Workflow simulation engine
+•	Conditional logic handling (approval thresholds, actions)
+
+* Additional Features:
+•	Workflow validation (required fields, logical checks, date validation)
+•	JSON export functionality
+•	Improved UI with card-based layout and structured panels
+
+-> Design Decisions
+•	Zustand for state management: Lightweight and simpler than Redux
+•	Component-based architecture: Improves scalability and maintainability
+•	Separation of concerns:
+o	UI (components)
+o	State (store)
+o	Logic (simulation)
+•	Validation before execution: Ensures correct workflow behavior
+•	Extensible node structure: Easy to add new node types
+
+->What is Completed vs Future Improvements
+
+* Completed:
+•	Core workflow builder functionality
+•	Dynamic configuration system
+•	Simulation engine with conditional logic
+•	Validation system
+•	JSON export feature
+
+ *Future Improvements:
+•	Import workflow from JSON
+•	Undo/Redo functionality
+•	Drag-and-drop node arrangement
+•	Visual error highlighting on nodes
+•	Auto-layout and node connections
+•	Zoom and mini-map support
+
+
