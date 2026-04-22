@@ -5,6 +5,8 @@ This project is a dynamic Workflow Builder application that allows users to crea
 The application focuses on clean architecture, dynamic UI rendering, and logical workflow execution.
 
 ->Architecture
+![Architecture Diagram](./architecture.png)
+This diagram represents the system architecture showing interaction between UI components, state management, and workflow logic.
 
 The application is built using React.js with Zustand for state management.
 
